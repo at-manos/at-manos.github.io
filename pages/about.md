@@ -8,9 +8,9 @@ menu: about
 permalink: /about/
 ---
 
-Hi, I'm Aiden! I'm a junior at the University of Maryland, College Park, pursuing a Computer Science degree with a minor in Technology Entrepreneurship.
+Hi, I'm Aiden! I'm a junior at the University of Maryland, pursuing a Computer Science degree with a minor in Technology Entrepreneurship.
 
-I'm passionate about the intersection of data science, cybersecurity, and systems engineering. My interests span machine learning and neural networks to network security and infrastructure design. I love tackling complex problems that require both technical depth and strategic thinking.
+I'm passionate about the intersection of data science, cybersecurity, and systems engineering. My interests span from machine learning and neural networks to network security and infrastructure design. I love tackling complex problems that require both technical depth and strategic thinking.
 
 Currently seeking internships where I can apply my curiosity for learning, problem-solving skills, and technical expertise to real-world challenges in data, security, and software development.
 
