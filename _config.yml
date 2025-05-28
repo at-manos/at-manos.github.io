@@ -5,8 +5,8 @@ baseurl:
 url: https://blog.atmanos.com
 date_format: "ordinal"
 title: atmanos
-subtitle: ""
-description: "Aiden Manos' Personal Blog"
+subtitle: "Aiden Manos' Blog"
+description: ""
 keywords: Aiden Manos
 timezone: America/New_York
 encoding: "utf-8"
@@ -58,10 +58,10 @@ highlight_theme: github
 #      Author      #
 # ---------------- #
 author: Aiden Manos
-organization: University of Maryland
+organization:
 organization_url:
 github_username: at-manos
-location:
+location: University of Maryland
 email: me@atmanos.com
 
 # ---------------- #
