@@ -1,0 +1,42 @@
+- name: Software
+  keywords:
+    - Python
+    - C
+    - Java
+    - JavaScript
+    - Rust
+    - Git
+    - PostgreSQL
+
+- name: Cybersecurity
+  keywords:
+    - TCP/IP Networking
+    - Network Security
+    - Linux Systems
+    - Infrastructure Design
+
+- name: Data
+  keywords:
+    - Machine Learning
+    - Deep Neural Networks (RNN, CNN, Transformers)
+    - Computer Vision
+    - Natural Language Processing
+    - Exploratory Data Analysis
+    - Data Privacy
+
+- name: Math & Systems
+  keywords:
+    - Linear Algebra
+    - Optimization Theory
+    - Algorithm Design
+    - System Architecture
+    - Performance Analysis
+    - Real Analysis
+
+- name: Interests
+  keywords:
+    - Photography
+    - Linguistics
+    - Mandarin Chinese
+    - Technology Entrepreneurship
+    - Technical Communication
