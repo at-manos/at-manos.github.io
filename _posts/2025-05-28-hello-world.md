@@ -12,4 +12,4 @@ mindmap: false
 mindmap2: false
 ---
 
-Hello World!
+Hello World! This is the first post on my blog. It will hold my ramblings and thoughts as I explore random technologies, books, and anything I'm interested in.
