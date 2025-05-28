@@ -30,9 +30,8 @@ site.repository | append: '@master' %} {% endif %}
             {% endfor %} {% if site.components.word_count.enabled %}
             <span class="meta-info">
               <span class="octicon octicon-clock"></span>
-              {{ page.content | strip_html | strip_newlines | remove: " " | size
-              }} words, approximately {{ page.content | strip_html |
-              strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }}
+              {{ page.content | number_of_words }} words, approximately {{
+              page.content | number_of_words | divided_by: 200 | plus: 1 }}
               minutes to read
             </span>
             {% endif %}
