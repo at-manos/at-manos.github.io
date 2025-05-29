@@ -1,8 +1,8 @@
 ---
 layout: post
-title: the network metrics that predicted the pope(*)
+title: the network metrics that predicted the pope
 categories: [graph theory, social networks]
-description: what can graph connections tell us about human connections?
+description: what can graph connections tell us about human connections? The algorithms that predicted the pope, and drive web search.
 keywords: pope, robert prevost, graphs, eigenvector centrality, betweenness centrality
 mermaid: false
 sequence: false
@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 # Habemus Papam!
-
+#### The algorithms that predicted the pope, and drive web search.
 There's a new pope, if you haven't heard. [Robert Francis Prevost](https://en.wikipedia.org/wiki/Pope_Leo_XIV), or as he's now known, [Pope Leo XIV](https://en.wikipedia.org/wiki/Pope_Leo_XIV). What you might not have heard was *his name* in the media swarm of people in contention to be pope.
 
 Was this really such a surprise? Some Italian researchers at the University of Bocconi might not think so. Prior to the conclave, they calculated some network centrality metrics and found him at the top of one list, "eigenvector centrality".[^1]
@@ -53,7 +53,7 @@ A[i][j] = \begin{cases}
 $$
 
 ![An example of a simple graph and its adjacency matrix](/images/blog/pope/1748543692014.png)
-<p style="text-align: center; margin-top: -1rem;">An example of a simple graph and its adjacency matrix</p>
+<p style="text-align: center; margin-top: -1rem;">An example of a simple graph and its adjacency matrix <sup><a href="https://graphicmaths.com/computer-science/graph-theory/adjacency-matrices/">src</a></sup></p>
 
 This matrix representation lends itself naturally to linear algebra, and in fact this is where the insight of *eigenvector centrality* comes from.
 
@@ -132,7 +132,7 @@ $$
 
 However, this is **terribly inefficient**, computing the full set of solutions is $$\mathcal{O}(n^4)$$ or worse. So, generally a process called [power iteration](https://en.wikipedia.org/wiki/Power_iteration) is used.
 
-Sergey Brin and Larry Page realized that web pages shouldn't be ranked by just their content, but also the **importance of pages linking to them**. This lead to the development of PageRank, which is essentially just eigenvector centrality applied to the web graph.
+In 1996, Google founders Sergey Brin and Larry Page realized that web pages shouldn't be ranked by just their content, but also the **importance of pages linking to them**. This led to the development of PageRank, which is essentially just eigenvector centrality applied to the web graph.
 
 The University of Bocconi arrived at the following top-5 for the eigenvector centrality scores.
 
@@ -166,4 +166,4 @@ If you would like to read more, please head over to the original press publicati
 
 [^1]: [https://www.unibocconi.it/en/news/network-conclave](https://www.unibocconi.it/en/news/network-conclave)
 
-[^2]: [https://graphicmaths.com/computer-science/graph-theory/adjacency-matrices/](https://graphicmaths.com/computer-science/graph-theory/adjacency-matrices/)
+Simple graph figure: [https://graphicmaths.com/computer-science/graph-theory/adjacency-matrices/](https://graphicmaths.com/computer-science/graph-theory/adjacency-matrices/)
