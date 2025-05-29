@@ -65,10 +65,6 @@ This can be given by
 
 $$
 c_i \propto \sum_j A_{ij} c_j
-$$
-
-$$
-c_i \propto \sum_j A_{ij} c_j
 $$ 
 
 implies that there is some *proportional constant* $$k$$ where
