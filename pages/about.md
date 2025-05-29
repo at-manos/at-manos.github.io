@@ -14,7 +14,7 @@ I'm passionate about the intersection of data science, cybersecurity, and system
 
 Currently seeking internships where I can apply my curiosity for learning, problem-solving skills, and technical expertise to real-world challenges in data, security, and software development.
 
-When I'm not coding, you'll find me taking photos, studying Chinese, or reading linguistics research.
+If I'm not coding, I'm probably flying drones, taking photos, or reading about linguistics.
 
 ## Contact
 
