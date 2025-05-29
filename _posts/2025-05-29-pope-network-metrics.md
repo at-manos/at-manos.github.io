@@ -149,7 +149,7 @@ I am no expert on Vatican politics, but it does make sense that Robert Prevost r
 
 ## Betweenness Centrality
 
-Another metric that they used, was *betweenness centrality*.
+Another metric that they used was *betweenness centrality*.
 
 The idea is that nodes are important if they lie on many shortest paths **between** nodes; they are a bridge or bottleneck.
 
