@@ -60,20 +60,23 @@ This matrix representation lends itself naturally to linear algebra, and in fact
 Again, we want any node ($$i$$)'s importance/centrality ($$c_i$$) to be proportional to the sum of its neighbors. 
 
 This can be given by
+
 $$
 c_i \propto \sum_j A_{ij} c_j
 $$
+
 $$
 c_i \propto \sum_j A_{ij} c_j
 $$ 
 
 implies that there is some *proportional constant* $$k$$ where
+
 $$
 c_i = k\sum_j A_{ij} c_j
 $$
 
 given recursively in lazy pseudocode by
-```python
+```py
 def centrality(node):
     # base case omitted
     c_node = 0
@@ -90,15 +93,19 @@ c_i = k\sum_j A_{ij} c_j
 $$
 
 If we pack our scores in a vector $$c=(c_1,c_2,\dots, c_n)^T$$, we can rewrite the above as
+
 $$
 c= kAc
 $$
+
 $$
 \frac1kc = Ac
 $$
+
 $$
 Ac = \frac1kc
 $$
+
 This *is* the eigenvector equation $$Ac = \lambda c$$, just using $$\frac1k$$ instead of $$\lambda$$.
 
 Now that we've connected this problem to a well-known concept in linear algebra, we've now climbed on top of the shoulders of giants and can use all of the results that come with it.
