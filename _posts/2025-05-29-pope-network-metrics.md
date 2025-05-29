@@ -13,7 +13,7 @@ mindmap2: false
 ---
 # Habemus Papam!
 
-There's a new pope, if you haven't heard. [Robert Francis Prevost](https://en.wikipedia.org/wiki/Pope_Leo_XIV), or as he's now known, [Pope Leo XIV](https://en.wikipedia.org/wiki/Pope_Leo_XIV). What you might not have heard was his name in the media swarm of people in contention to be pope.
+There's a new pope, if you haven't heard. [Robert Francis Prevost](https://en.wikipedia.org/wiki/Pope_Leo_XIV), or as he's now known, [Pope Leo XIV](https://en.wikipedia.org/wiki/Pope_Leo_XIV). What you might not have heard was *his name* in the media swarm of people in contention to be pope.
 
 Was this really such a surprise? Some Italian researchers at the University of Bocconi might not think so. Prior to the conclave, they calculated some network centrality metrics and found him at the top of one list, "eigenvector centrality".[^1]
 
