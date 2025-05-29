@@ -159,6 +159,8 @@ The University of Bocconi arrived at the following top-5 for the betweenness cen
 4. Gérald Lacroix (Canada)
 5. Joseph Tobin (USA)
 
+Unlike eigenvector centrality, betweenness centrality didn't predict the papal outcome, with the eventual Pope Leo XIV not appearing in its top-5.
+
 
 If you would like to read more, please head over to the original press publication[^1]. I don't believe any technical paper has been put out by them as of yet, but I could be wrong.
 
