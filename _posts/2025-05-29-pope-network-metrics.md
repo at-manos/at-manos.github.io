@@ -167,5 +167,3 @@ The University of Bocconi arrived at the following top-5 for the betweenness cen
 If you would like to read more, please head over to the original press publication[^1]. I don't believe any technical paper has been put out by them as of yet, but I could be wrong.
 
 [^1]: [https://www.unibocconi.it/en/news/network-conclave](https://www.unibocconi.it/en/news/network-conclave)
-
-Simple graph figure: [https://graphicmaths.com/computer-science/graph-theory/adjacency-matrices/](https://graphicmaths.com/computer-science/graph-theory/adjacency-matrices/)
