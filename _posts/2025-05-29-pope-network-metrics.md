@@ -119,13 +119,17 @@ For a strongly-connected graph, the [Perron-Frobenius theorem](https://en.wikipe
 As a note, typically the eigenvector $$c$$ is normalized such that $$c_1+c_2+\dots+c_n=1$$ so we can interpret them as percentages.
 
 We can find this principal eigenvector in many ways. For small graphs, you can probably get away with solving the textbook
+
 $$
 det(A - \lambda I) = 0
 $$
+
 to get all the possible eigenvalues, then getting the corresponding vector $$c$$ by
+
 $$
 (A-\lambda I)c = 0
 $$
+
 However, this is **terribly inefficient**, computing the full set of solutions is $$\mathcal{O}(n^4)$$ or worse. So, generally a process called [power iteration](https://en.wikipedia.org/wiki/Power_iteration) is used.
 
 Sergey Brin and Larry Page realized that web pages shouldn't be ranked by just their content, but also the **importance of pages linking to them**. This lead to the development of PageRank, which is essentially just eigenvector centrality applied to the web graph.
