@@ -76,7 +76,7 @@ c_i = k\sum_j A_{ij} c_j
 $$
 
 given recursively in lazy pseudocode by
-```py
+```python
 def centrality(node):
     # base case omitted
     c_node = 0
