@@ -67,7 +67,7 @@ $$
 c_i \propto \sum_j A_{ij} c_j
 $$ 
 
-implies that there is some *proportional constant* $$k$$ where
+which implies that there is some *proportional constant* $$k$$ where
 
 $$
 c_i = k\sum_j A_{ij} c_j
