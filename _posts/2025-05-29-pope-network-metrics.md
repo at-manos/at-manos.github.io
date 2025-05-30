@@ -48,7 +48,7 @@ Let's go back to the basics of graphs to find a way we can calculate such a thin
 Graphs are commonly stored as adjacency matrices. In the simplest case, we have a matrix $$A$$ where
 
 $$
-A[i][j] = \begin{cases}
+A_{ij} = \begin{cases}
 0 & \text{No connection between i,j,}\\
 1 & \text{Connection between i,j.}
 \end{cases}
