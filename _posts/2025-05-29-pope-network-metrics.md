@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 # Habemus Papam!
-#### The algorithms that predicted the pope and drive web search.
+#### The metrics that predicted the pope and drive web search.
 
 
 There's a new pope, if you haven't heard. [Robert Francis Prevost](https://en.wikipedia.org/wiki/Pope_Leo_XIV), or as he's now known, [Pope Leo XIV](https://en.wikipedia.org/wiki/Pope_Leo_XIV). What you might not have heard was *his name* in the media swarm of people in contention to be pope.
