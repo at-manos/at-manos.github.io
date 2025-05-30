@@ -128,7 +128,7 @@ $$
 (A-\lambda I)c = 0
 $$
 
-However, this is **terribly inefficient**, computing the full set of solutions is $$\mathcal{O}(n^4)$$ or worse. So, generally a process called [power iteration](https://en.wikipedia.org/wiki/Power_iteration) is used.
+However, this is **terribly inefficient**, computing the full set of solutions is $$\mathcal{O}(n^4)$$ or worse. So, generally a process called [power iteration](https://en.wikipedia.org/wiki/Power_iteration) is used, which continually applies the adjacency matrix in succeeding powers. The power iterative approach converges to the principal eigenvector quickly, even for large graphs like the web.
 
 In 1996, Google founders Sergey Brin and Larry Page realized that web pages shouldn't be ranked by just their content, but also the **importance of pages linking to them**. This led to the development of PageRank, which is essentially just eigenvector centrality applied to the web graph.
 
@@ -161,6 +161,15 @@ The University of Bocconi arrived at the following top-5 for the betweenness cen
 
 Unlike eigenvector centrality, betweenness centrality didn't predict the papal outcome, with the eventual Pope Leo XIV not appearing in its top-5.
 
+# Conclusion
+
+So, which one is right? Did they really predict the pope? Well, if you pick eigenvector centrality, then *he was* at the top of that list.
+
+However, these are just a subset of the many ways we can measure "importance" in a network. There’s no single, universal metric—what counts as "important" depends entirely on the question you’re asking.
+
+Is the most connected person the most powerful? Or is the bridge who links otherwise disconnected groups more vital? For example, Anders Arborelius ranked highest by betweenness centrality—not because he was the loudest voice, but because possibly, as the first Swedish cardinal and one of the few multilingual connectors, he acts as a bridge to communities that might otherwise be left out.
+
+Ultimately, every metric tells its own story about influence, connection, and power. Whether you’re predicting popes, ranking web pages, or just trying to understand your own friend group, it all depends on what you decide "importance" really means.
 
 If you would like to read more, please head over to the original press publication[^1]. I don't believe any technical paper has been put out by them as of yet, but I could be wrong.
 
