@@ -67,7 +67,7 @@ $$
 c_i \propto \sum_j A_{ij} c_j
 $$ 
 
-which implies that there is some *proportional constant* $$k$$ where
+which implies that there is some *proportionality constant* $$k$$ where
 
 $$
 c_i = k\sum_j A_{ij} c_j
@@ -106,7 +106,7 @@ $$
 
 This *is* the eigenvector equation $$Ac = \lambda c$$, just using $$\frac1k$$ instead of $$\lambda$$.
 
-Now that we've connected this problem to a well-known concept in linear algebra, we've now climbed on top of the shoulders of giants and can use all of the results that come with it.
+Now that we connected this problem to a well-known concept in linear algebra, we've climbed on top of the shoulders of giants and can use all of the results that come with it.
 
 The result $$Ac = \lambda c$$ means that when the adjacency matrix transforms all of the centralities, it is only scaled by $$\lambda$$ (the *eigenvalue*), not rotated. Inside this vector $$c$$ we can find the importance of every node $$i$$ at $$c_i$$.
 
