@@ -53,6 +53,7 @@ There is no shortage of methods of measuring randomness, and many methods have b
 3. Algorithmic complexity[^1]: the shortest computer program that produces the string[^2]
 1. Compression algorithms: As simple as it sounds! Pass it through gzip, lz, etc and compute $$\frac{\text{compressed}}{\text{uncompressed}}$$. For true random files, this should be $$100\%$$.
 
+If you'd like a thorough analysis and discussion of the effectiveness of the traditional methods, check out the paper by Angelike et al [^3], it is comprehensive and well-researched. 
 # My solution: Why machine learning?
 
 All of the traditional solutions have solid foundations and are very tractable and explainable. But, there is a wide variety of them and there is no standard, making it harder to compare results.
