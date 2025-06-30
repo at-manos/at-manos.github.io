@@ -385,7 +385,7 @@ Or, is it? Many papers have used attention for explainability[^7], and even thou
 
 What I did observe, though, was that there appeared to be "sinks" of attention, where many of the tokens paid attention to a single one, usually in the middle of a recognizable signal (e.g., in the middle of a counting sequence, or in the middle of a repeated pattern). This may indicate the kind of behavior I was looking for, but it's hard to tell.
 
-Ablating heads did not yield great results in terms of interpretability, aside from degrading the overall predictive accuracy of the model. More data would make this work much easier, as the low data makes it hard to know if it might just be memorizing common patterns in the data.
+Ablating heads did not yield great results in terms of interpretability, aside from degrading the overall predictive accuracy of the model. More data would make this work much easier, as with more data you could be more confident you're learning human sequences and not just the subset I have.
 
 # Applications
 
