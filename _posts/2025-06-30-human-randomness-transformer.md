@@ -397,7 +397,7 @@ Research has shown that humans exhibit a kind of "randomness fingerprint". For e
 
 ## Cryptography
 
-One of the motivations for me starting this little project was the existance of "gibberish" in ciphers. Sometimes, ciphers will be mostly deciphered, except for some chunk. Much speculation is made about these chunks, mostly whether they are padding of gibberish or undeciphered codetext. With a reliable way to determine if a sequence is human-random, we may get an answer to that.
+One of the motivations for me starting this little project was the existence of "gibberish" in ciphers. Sometimes, ciphers will be mostly deciphered, except for some chunk. Much speculation is made about these chunks, mostly whether they are padding of gibberish or undeciphered codetext. With a reliable way to determine if a sequence is human-random, we may get an answer to that.
 
 Indeed, I generated synthetic data for this task, and I was able to pick out the enciphered English with high probability. More research in this area would be great.
 
