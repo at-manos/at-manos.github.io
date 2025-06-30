@@ -117,7 +117,7 @@ With a sequence size of 20, I had about 12,000 training pairs of (sequence, labe
 I have to acknowledge that this is not a lot of data for a transformer, and as such I had to combat overfitting more, but the real solution of course is more data. My data pool is quite limited and I would love to see more research on this front.
 
 # The Architecture
-Since we're dealing with sequences, my first thought was to build a RNN. Although light, with a bi-directional gated recurrent network I had a hard time pushing past 20% error, I realized I didn't have a great opportunity to visualize and interpret the data with that method.
+Since we're dealing with sequences, my first thought was to build a RNN. Although light, with a bi-directional gated recurrent network I had a hard time pushing past 20% error, and I realized I didn't have a great opportunity to visualize and interpret the data with that method.
 
 So, my alternative thought was to go with an *attention* base, where every digit pays attention to each other one in the sequence, hoping that we would see for example in a counting sequence:
 
