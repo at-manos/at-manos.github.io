@@ -10,6 +10,7 @@ flow: false
 mathjax: true
 mindmap: false
 mindmap2: false
+image: /images/blog/pope/1748542033056.png
 ---
 # Habemus Papam!
 #### The metrics that predicted the pope and drive web search.

@@ -739,6 +739,47 @@ img + em {
   display: block;
 }
 
+caption {
+    text-align: center;
+    margin-top: -1rem;
+}
+
+/* Optional container styling */
+details {
+    margin: 1em 0;
+    padding: 0.5em;
+    border-left: 3px solid #ccc;
+    background: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    position: relative;
+    padding-left: 1.2em;
+  }
+  
+  /* Hide default disclosure triangle */
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  /* Add custom Unicode arrow */
+  summary::before {
+    content: "▸"; /* Right-pointing arrow by default */
+    position: absolute;
+    left: 0;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Rotate arrow when open */
+  details[open] summary::before {
+    content: "▾"; /* Down-pointing arrow */
+  }
+  
+
 .content-header-ad { display:inline-block; width: 320px; height: 50px; }
 @media (max-width: 400px) { .content-header-ad { display: none; } }
 @media (min-width:500px) { .content-header-ad { width: 468px; height: 60px; } }
