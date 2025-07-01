@@ -173,7 +173,7 @@ embedding = NetGraph[
 
 ## Transformer
 ### Attention
-Initially, I tried single head attention at first. I didn't get great performance, and stacking more didn't help. After I switched to multi-head attention, my performance saw a massive boost. This is likely because splitting into multiple heads allows each blcok to work with smaller, richer subspaces of the projections which are specific to each head.
+Initially, I tried single head attention at first. I didn't get great performance, and stacking more didn't help. After I switched to multi-head attention, my performance saw a massive boost. This is likely because splitting into multiple heads allows each block to work with smaller, richer subspaces of the projections which are specific to each head.
 
 
 Early on, I also had an issue with saturated weights after my first transformer block. When I inspected the attention weights, they would all be close to either 1 or 0, even with score rescaling.
