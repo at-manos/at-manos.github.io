@@ -295,7 +295,7 @@ ffn = NetGraph[
 
 ## Classification
 ![Classification](/images/blog/humanrand/clswbar.png)
-<p style="text-align: center; margin-top: -1rem;">Attention weights as a graph, colored by their attention to [CLS].</p>
+<p style="text-align: center; margin-top: -1rem;">Attention weights as a graph, colored by their attention from [CLS].</p>
 
 Originally, I just used mean pooling, but I wanted more interpretability, so I went for a [CLS] token. With this, I could see which tokens affected the final classification the most by checking the attention to the [CLS] token.
 
