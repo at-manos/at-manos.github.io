@@ -394,7 +394,7 @@ The human RNG task has been used to investigate several disorders, like schizoph
 
 ## Identification
 
-Research has shown that humans exhibit a kind of "randomness fingerprint". For example, a short paper by Schulz et al. [^9] re-identified participants with a simple Euclidian distance between the points in n-dimensional space. This suggests that humans generate random numbers in predictable, unique ways, and has application in cryptography as well.
+Research has shown that humans exhibit a kind of "randomness fingerprint". For example, a short paper by Schulz et al. [^9] re-identified participants with a simple Euclidian distance between the points in n-dimensional space, using only a sequence of 9 numbers. This suggests that humans generate random numbers in predictable, unique ways, and this has application in cryptography as well.
 
 ## Cryptography
 
@@ -409,7 +409,7 @@ I refer you to any of the papers I have linked in the footnotes, they are all wo
 
 # Acknowledgements
 
-My little curiosity about this would be much harder to do without the work of Tim Angelike et al, and Brian Ellis' HumanRandom project.
+My little curiosity about this would be much harder to explore without the work of Tim Angelike et al, and Brian Ellis' HumanRandom project.
 
 [^1]:[Gauvrit, N. Singmann et al., Algorithmic complexity for psychology: A user-friendly implementation of the coding theorem method.](https://doi.org/10.3758/s13428-015-0574-3)
 
