@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 # Why do I have this blog?
-#### Because I am a nerd.
+#### To log my curiosities.
 
 
 I thought it might be good to clear up why exactly I even have a blog.
