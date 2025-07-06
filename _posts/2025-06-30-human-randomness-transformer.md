@@ -51,7 +51,7 @@ There is no shortage of methods of measuring randomness, and many methods have b
    2. Redundancy index: how uniform is the frequency of digits? (i.e, block entropy with $$n=1$$)
 2. Coupon score: how long does it take for all possible digits to occur?
 3. Algorithmic complexity[^1]: the shortest computer program that produces the string[^2]
-1. Compression algorithms: As simple as it sounds! Pass it through gzip, lz, etc and compute $$\frac{\text{compressed}}{\text{uncompressed}}$$. For true random files, this should be $$\approx 100\%$$ on average.
+4. Compression algorithms: As simple as it sounds! Pass it through gzip, lz, etc and compute $$\frac{\text{compressed}}{\text{uncompressed}}$$. For true random files, this should be $$\approx 100\%$$ on average.
 
 If you'd like a thorough analysis and discussion of the effectiveness of the traditional methods, check out the paper by Angelike et al [^3], it is comprehensive and well-researched. 
 # My solution: Why machine learning?
