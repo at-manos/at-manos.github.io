@@ -51,7 +51,7 @@ There is no shortage of methods of measuring randomness, and many methods have b
    2. Redundancy index: how uniform is the frequency of digits? (i.e, block entropy with $$n=1$$)
 2. Coupon score: how long does it take for all possible digits to occur?
 3. Algorithmic complexity[^1]: the shortest computer program that produces the string[^2]
-1. Compression algorithms: As simple as it sounds! Pass it through gzip, lz, etc and compute $$\frac{\text{compressed}}{\text{uncompressed}}$$. For true random files, this should be $$100\%$$.
+1. Compression algorithms: As simple as it sounds! Pass it through gzip, lz, etc and compute $$\frac{\text{compressed}}{\text{uncompressed}}$$. For true random files, this should be $$\approx 100\%$$ on average.
 
 If you'd like a thorough analysis and discussion of the effectiveness of the traditional methods, check out the paper by Angelike et al [^3], it is comprehensive and well-researched. 
 # My solution: Why machine learning?
@@ -98,13 +98,13 @@ Take for example, a bunch of random points in the 2D plane.
 
 This is a case where, in fact, the space of infinite random points spans the entire second dimension. There's no underlying structure we can exploit to represent these points more efficiently, other than memorizing. Thus,
 
-**True randomness is incompressible.**
+**True randomness is incompressible.**[^4]
 
 # The Data
 There was not a lot of freely available data for this task, although I am sure there is a lot of it in the academic world I could not find. I sourced my data from the following sources:
 
 - Humans participating in the RNG task (Angelike, Musch)[^3]
-- Brian Ellis' HumanRandom project [^4]
+- Brian Ellis' HumanRandom project [^5]
 - "Keyboard-smash" sequences from me and friends.
 
 The non-human sequences came from the following pseudo-RNG sources:
@@ -124,7 +124,7 @@ So, my alternative thought was to go with an *attention* base, where every digit
 
 > 1 pays attention to 2 who pays attention to 3, etc.
 
-The canonical form of this is a transformer, laid out in the famous paper "Attention is all you need"[^5], and so this is what I built.
+The canonical form of this is a transformer, laid out in the famous paper "Attention is all you need"[^6], and so this is what I built.
 
 ## Embedding
 ![1748978354446](/images/blog/humanrand/embed.png)
@@ -379,9 +379,9 @@ Here are the charts from my best-performing run, which achieved a 90% validation
 ![Learning rate](/images/blog/humanrand/learnrate.png)
 ![Rounds since improvement](/images/blog/humanrand/patience.png)
 # Interpretability
-Unfortunately, contrary to what I hoped, there didn't appear to be a "counting head", or a "repetition head" that identified biases in a nice way. As I found out, "Attention is not explanation"[^6]
+Unfortunately, contrary to what I hoped, there didn't appear to be a "counting head", or a "repetition head" that identified biases in a nice way. As I found out, "Attention is not explanation"[^7]
 
-Or, is it? Many papers have used attention for explainability[^7], and even though peeking at individual attention weights might not yield human explanations, there are some methods that might work, like attention flow and attention rollout [^8]. I may do a post in the future exploring these, or update this post with an implementation of these.
+Or, is it? Many papers have used attention for explainability[^8], and even though peeking at individual attention weights might not yield human explanations, there are some methods that might work, like attention flow and attention rollout [^9]. I may do a post in the future exploring these, or update this post with an implementation of these.
 
 What I did observe, though, was that there appeared to be "sinks" of attention, where many of the tokens paid attention to a single one, usually in the middle of a recognizable signal (e.g., in the middle of a counting sequence, or in the middle of a repeated pattern). This may indicate the kind of behavior I was looking for, but it's hard to tell.
 
@@ -394,7 +394,7 @@ The human RNG task has been used to investigate several disorders, like schizoph
 
 ## Identification
 
-Research has shown that humans exhibit a kind of "randomness fingerprint". For example, a short paper by Schulz et al. [^9] re-identified participants with a simple Euclidian distance between the points in n-dimensional space, using only a sequence of 9 numbers. This suggests that humans generate random numbers in predictable, unique ways, and this has application in cryptography as well.
+Research has shown that humans exhibit a kind of "randomness fingerprint". For example, a short paper by Schulz et al. [^10] re-identified participants with a simple Euclidian distance between the points in n-dimensional space, using only a sequence of 9 numbers. This suggests that humans generate random numbers in predictable, unique ways, and this has application in cryptography as well.
 
 ## Cryptography
 
@@ -417,14 +417,16 @@ My little curiosity about this would be much harder to explore without the work 
 
 [^3]: [Angelike, T., Musch, J. A comparative evaluation of measures to assess randomness in human-generated sequences](https://doi.org/10.3758/s13428-024-02456-7)
 
-[^4]:[https://github.com/kitchWWW/HumanRandom/](https://github.com/kitchWWW/HumanRandom/)
+[^4]: More formally for our case, strings that are random in the sense of Kolmogorov complexity have no shorter description than themselves.
 
-[^5]: [Vaswani, Ashish, et al., Attention is all you need.](https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)
+[^5]: [https://github.com/kitchWWW/HumanRandom/](https://github.com/kitchWWW/HumanRandom/)
 
-[^6]: [Jain, S., Wallace, B. Attention is not Explanation](https://arxiv.org/abs/1902.10186)
+[^6]: [Vaswani, Ashish, et al., Attention is all you need.](https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html)
 
-[^7]: [Wiegreffe, S., Pinter Y. Attention is not not Explanation](https://doi.org/10.18653/v1/D19-1002)
+[^7]: [Jain, S., Wallace, B. Attention is not Explanation](https://arxiv.org/abs/1902.10186)
 
-[^8]: [Abnar, S., Zuidema, W. Quantifying Attention Flow in Transformers](https://arxiv.org/pdf/2005.00928)
+[^8]: [Wiegreffe, S., Pinter Y. Attention is not not Explanation](https://doi.org/10.18653/v1/D19-1002)
 
-[^9]: [Schulz, M., Baier, S., Böhme, B., Bzdok, D., & Witt, K. A Cognitive Fingerprint in Human Random Number Generation.](https://doi.org/10.31234/osf.io/gub8e)
+[^9]: [Abnar, S., Zuidema, W. Quantifying Attention Flow in Transformers](https://arxiv.org/pdf/2005.00928)
+
+[^10]: [Schulz, M., Baier, S., Böhme, B., Bzdok, D., & Witt, K. A Cognitive Fingerprint in Human Random Number Generation.](https://doi.org/10.31234/osf.io/gub8e)
