@@ -10,6 +10,7 @@ flow: false
 mathjax: true
 mindmap: false
 mindmap2: false
+image: /images/blog/social-ai/dartmouth-workshop.webp
 ---
 
 
