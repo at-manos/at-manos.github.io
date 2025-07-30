@@ -62,7 +62,7 @@ Three years after the Dartmouth christening of "Artificial Intelligence", Arthur
 ![Arthur Samuel working on his Checkers program in 1959](/images/blog/social-ai/samuel.jpg)
 <p style="text-align: center; margin-top: -1rem;">Arthur Samuel working on his Checkers program in 1959</p>
 
-While Minsky's style of AI encountered several funding "winters" (a period of reduced funding or interest), researchers persisted with data-driven statistical approaches. By the mid-1980s, machine learning (ML) had become its own field, marked by the launch of the journal *Machine Learning* in 1986.
+While Minsky's style of AI encountered several funding ["winters"](https://en.wikipedia.org/wiki/AI_winter) (a period of reduced funding or interest), researchers persisted with data-driven statistical approaches. By the mid-1980s, machine learning (ML) had become its own field, marked by the launch of the journal *Machine Learning* in 1986.
 
 By 1997, Tom M. Mitchell's textbook *Machine Learning* became the first comprehensive introduction for undergraduates, graduates, and practitioners, and thus the term was cemented forever.
 
