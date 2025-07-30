@@ -152,6 +152,45 @@
     line-height: 1.4;
   }
   
+  img, table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img {
+    border-radius: 8px;
+
+  }
+  table {
+    width: fit-content !important;
+  }
+/* Make every blockquote a “callout” */
+blockquote {
+    position: relative;
+    background-color: #f0f8ff;       /* light blue background */
+    border-left: 5px solid #007acc;   /* bright accent bar */
+    padding: 1rem 2rem 1rem 2rem !important;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    font-style: normal;               /* override any italics */
+    color: #010100de !important;
+    line-height: 1.5;
+  }
+  
+  /* Optional icon at the start of every blockquote */
+  blockquote::before {
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Remove extra top/bottom margin on paragraphs */
+  blockquote p {
+    margin: 0;
+  }
+  
+
   /* VS Code Dark Theme Colors */
   .highlight .k { color: #569cd6; }                    /* Keywords (def, for, return) */
   .highlight .kn { color: #569cd6; }                   /* Keyword.Namespace (import) */
@@ -173,3 +212,26 @@
   .highlight .bp { color: #569cd6; }                   /* Built-in pseudo (self) */
   .highlight .se { color: #d7ba7d; }                   /* String escapes */
   .highlight .err { color: #f44747; }                  /* Errors */
+
+  /* style the footnote link so it’s obvious it has extra info */
+a.footnote {
+    position: relative;
+    text-decoration: none;
+    border-bottom: 1px dotted #666;
+  }
+  
+  /* the little hover‑box */
+  .footnote-popup {
+    position: absolute;
+    z-index: 999;
+    max-width: 250px;
+    padding: 0.5em;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    pointer-events: auto; 
+  }
+  

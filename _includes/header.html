@@ -205,3 +205,72 @@
     <!-- / header -->
   </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let activePopup = null;
+    let hideTimeout = null;
+
+    document.querySelectorAll("a.footnote").forEach((link) => {
+      const targetId = link.getAttribute("href");
+      const safeId = targetId.replace(/:/g, "\\:");
+      const note = document.querySelector(safeId);
+      if (!note) return;
+
+      const showPopup = () => {
+        if (activePopup) {
+          activePopup.remove();
+          activePopup = null;
+          clearTimeout(hideTimeout);
+        }
+
+        const para = note.querySelector("p");
+        if (!para) return;
+
+        const clone = para.cloneNode(true);
+        clone
+          .querySelectorAll("a.reversefootnote")
+          .forEach((el) => el.remove());
+
+        const popup = document.createElement("div");
+        popup.className = "footnote-popup";
+        popup.style.position = "absolute";
+        popup.style.zIndex = "9999";
+        popup.innerHTML = clone.innerHTML;
+        document.body.appendChild(popup);
+
+        const { bottom, left } = link.getBoundingClientRect();
+        popup.style.top = `${bottom + window.scrollY + 6}px`;
+        popup.style.left = `${left + window.scrollX}px`;
+
+        popup.addEventListener("mouseenter", () => {
+          clearTimeout(hideTimeout);
+        });
+
+        popup.addEventListener("mouseleave", () => {
+          hidePopup();
+        });
+
+        activePopup = popup;
+      };
+
+      const hidePopup = () => {
+        hideTimeout = setTimeout(() => {
+          if (activePopup) {
+            activePopup.remove();
+            activePopup = null;
+          }
+        }, 200);
+      };
+
+      link.addEventListener("mouseenter", () => {
+        clearTimeout(hideTimeout);
+        showPopup();
+      });
+
+      link.addEventListener("mouseleave", () => {
+        hidePopup();
+      });
+    });
+  });
+</script>
