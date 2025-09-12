@@ -1,7 +1,7 @@
 ---
 layout: fragment
 title: Meditations - Book 3, Section 12
-tags:
+tags: quotes
 description: 
 keywords: 
 mermaid: false

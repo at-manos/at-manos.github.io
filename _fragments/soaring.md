@@ -1,7 +1,7 @@
 ---
 layout: fragment
 title: A great, soaring, passionate intelligence
-tags:
+tags: quotes
 description: 
 keywords: 
 mermaid: false
