@@ -1,6 +1,6 @@
 ---
 layout: fragment
-title: Meditations - Book 3, Section 12
+title: Matter momentarily comes together to be you
 tags: quotes
 description: 
 keywords: 
@@ -12,6 +12,6 @@ mindmap: false
 mindmap2: false
 ---
 
-> Do the task before you always adhering to strict reason with zeal and energy and yet with humanity, disregarding all lesser ends and keeping the divinity within you pure and upright, as though you were even now faced with its recall - if you hold steadily to this, staying for nothing and shrinking from nothing, only seeking in each passing action a conformity with nature and in each word and utterance a fearless truthfulness, then shall the good life be yours. And from this course no man has the power to hold you back.
+> Matter flows from place to place, and momentarily comes together to be you. Some people find that thought disturbing. I find the reality thrilling.
 
-Marcus Aurelis, via [Maxwell Staniforth's translation](https://archive.org/details/meditations0000marc_g6h3/page/60/mode/2up)
+Richard Dawkins
