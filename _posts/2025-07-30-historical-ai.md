@@ -297,14 +297,7 @@ Because of this, AI started finding its home in cloud data centers instead of un
 
 As the problems AI was being used to solve got bigger, its new home in the cloud gave AI the unprecedented space to grow unbounded. ChatGPT (2022) famously used transformers trained on terabytes of human language. Image models like Stable Diffusion (2022) needed to store billions of images and train on them. 
 
-However, large buildings with lots of computers working very hard don't come out of thin air. There are many considerations to take when examining data centers from an efficiency and sustainability standpoint. To reckon with AI in the modern era, we need to think past just the algorithms, and examine how they physically present themselves.
-
-## What does this mean physically?
-
-If you would like a deep dive into the effects of these systems in the real world, I am currently working on a sister article to this one, titled **"how to think about AI practically"**. I will update this article with a link there when it's up.
-
-For now, if there's something to keep in mind in that domain, it's that "artificial intelligence" is not artificial at all. It's real. It's physical. It's political. Understanding AI means understanding the infrastructure, the incentives, the people left out and the resources pulled in. There’s no clean narrative, and no single right answer, and in that article I hope to give you the tools and data to engage with the conversations around it.
-
+However, large buildings with lots of computers working very hard don't come out of thin air. There are many considerations to take when examining data centers from an efficiency and sustainability standpoint. If you would like a deep dive into the effects of these systems in the real world, I am currently working on a sister article to this one, titled **"how to think about AI practically"**. I will update this article with a link there when it's up.
 
 [^thinkingmachine]: [*The Thinking Machine*](https://www.youtube.com/watch?v=aygSMgK3BEM), Interview. YouTube.
 

@@ -50,12 +50,16 @@ comments: false
       font-size: 1.25em;
     }
   }
+  ol > li {
+    border-top: 2px dotted #161b22;
+
+  }
 </style>
 
 {% assign assets_base_url = site.url %} {% if site.cdn.jsdelivr.enabled %} {%
 assign assets_base_url = "https://fastly.jsdelivr.net/gh/" | append:
 site.repository | append: '@master' %} {% endif %}
-<section
+<!-- <section
   class="geopattern"
   data-pattern-id="{{ site.title | truncate: 15, ''}}"
 >
@@ -97,7 +101,7 @@ site.repository | append: '@master' %} {% endif %}
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /.banner -->
 <section class="container content">
   <div class="columns">
